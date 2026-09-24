@@ -7,6 +7,12 @@ edition = "2021"
 name = "evasendesign_microstock_manager_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
+[[bin]]
+name = "evasendesign-microstock-manager"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
 [dependencies]
 tauri = { version = "2", features = [] }
-tauri-build = { version = "2", features = [] }
